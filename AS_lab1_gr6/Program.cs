@@ -7,7 +7,7 @@ var app = builder.Build();
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
-
+//test
 app.MapDefaultControllerRoute();
 
 app.Run();
