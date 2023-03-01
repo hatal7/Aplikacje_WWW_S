@@ -1,15 +1,13 @@
-public IActionResult Index()
-{
-    <h1>@ViewBag.Title</h1>
-    <p>Witamy na stronie głównej</p>
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 
-    <p>
-        Artykuły:
-        <ul>
-            <li><a asp-controller="article" asp-action="index">Artykuł 1</a></li>
-        </ul>
+<h1>@ViewBag.Title</h1>
+<p>Witamy na stronie głównej</p>
 
-    </p>
+<p>
+    Artykuły:
 
-    return View();
-}
+<ul>
+    <li><a asp-controller="article" asp-action="index" asp-route-speakerid="@Model.Article">Artykuł 1</a></li>
+</ul>
+
+</p>
